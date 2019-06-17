@@ -16,4 +16,4 @@ for letra in cadena:
         print("no encontrado")
     else:
         #obtener simbolo morse de poscicion = poscion
-        print("{} : {}".format(letra, posicion))
+        print("{} : {}".format(letra, simbolos[posicion])
