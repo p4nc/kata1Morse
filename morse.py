@@ -1,5 +1,3 @@
-
-
 morse = {
     'A':'·—', 
     'B':'—···', 
@@ -42,17 +40,19 @@ morse = {
     ',': '—·—·——',
     '?': '··——··',
     '"': '·—··—·',
-    '!': '——··——'}
+    '!': '——··——'
+}
 
+def toMorse(texto):
 
-cadena = "Hola, mundo".upper()
+    texto = texto.upper()
+    resultado = ""
+    for letra in texto:   
+        if letra in morse:
+            resultado += morse[letra] 
+            resultado += " "  
+        else:
+            resultado += " "
 
-
-for letra in cadena:   
-    if letra in morse:
-    print("{} : {}".format(letra, morse[letra])
-       
-    else:
-    print(" ")
-        #obtener simbolo morse de poscicion = poscion
+    return resultado
         
